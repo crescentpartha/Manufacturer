@@ -1,10 +1,16 @@
 import React from 'react';
 import Banner from './Carousel/Banner';
+import ServiceSummary from './ServiceSummary';
 
 const Home = () => {
     return (
         <div>
-            <Banner></Banner>
+            <div>
+                <Banner></Banner>
+            </div>
+            <div>
+                <ServiceSummary></ServiceSummary>
+            </div>
         </div>
     );
 };

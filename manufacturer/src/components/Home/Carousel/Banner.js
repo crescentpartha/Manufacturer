@@ -27,12 +27,14 @@ const Banner = () => {
             // navigation
             pagination={{ clickable: true }}
             autoplay={{ delay: 3000 }}
+            className='bg-info'
+            
             // onSlideChange={() => console.log('slide change')}
             // onSwiper={(swiper) => console.log(swiper)}
         >
             {banners.map(banner => <SwiperSlide
                 key={banner.id}
-                className="bg-info"
+                style={{marginRight: '0px'}}
             ><DisplayBanner banner={banner}></DisplayBanner></SwiperSlide>
             )}
         </Swiper>

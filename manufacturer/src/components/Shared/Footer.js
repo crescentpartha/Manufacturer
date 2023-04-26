@@ -32,7 +32,7 @@ const Footer = () => {
                     <div className="items-center grid-flow-col">
                         <img width="120" height="80" src={payment} alt="Payment Method" />
                     </div>
-                    <Link className="link link-hover">Manufacturer - Custom Solutions to Suit Your Need</Link>
+                    <Link className="link link-hover"><span className='font-lobster'>Manufacturer</span> - Custom Solutions to Suit Your Need</Link>
                 </div>
             </footer>
             <footer className="footer px-10 py-4 border-t bg-neutral text-secondary border-neutral-300">
