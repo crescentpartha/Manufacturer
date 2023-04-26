@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from './Carousel/Banner';
 import ServiceSummary from './ServiceSummary';
 import Recommendations from './Recommendations';
+import BusinessSummary from './BusinessSummary';
 
 const Home = () => {
     return (
@@ -14,6 +15,9 @@ const Home = () => {
             </div>
             <div>
                 <Recommendations></Recommendations>
+            </div>
+            <div>
+                <BusinessSummary></BusinessSummary>
             </div>
         </div>
     );
