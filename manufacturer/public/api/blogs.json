@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "How will you improve the performance of a React Application?",
+        "description": "Optimizing application performance is key for developers who are mindful of keeping a user's experience positive to keep them on an app and engaged.",
+        "img": "../images/blogs/improving-performance.png",
+        "link": "/blogs/how-will-you-improve-the-performance-of-a-react-application",
+        "category": "Non-Functional Requirements",
+        "date": "April 29, 2023"
+    },
+    {
+        "id": 2,
+        "title": "What are the different ways to manage a state in a React application?",
+        "description": "In React apps, there are at least seven ways to handle the state. Let us briefly explore a few of them in this part.",
+        "img": "../images/blogs/react-state-management.jpg",
+        "link": "/blogs/what-are-the-different-ways-to-manage-a-state-in-a-react-application",
+        "category": "React",
+        "date": "April 05, 2023"
+    },
+    {
+        "id": 3,
+        "title": "How does prototypical inheritance work?",
+        "description": "Prototype inheritance in javascript is the linking of prototypes of a parent object to a child object to share and utilize the properties of a parent class using a child class.",
+        "img": "../images/blogs/prototypal-inheritance.png",
+        "link": "/blogs/how-does-prototypical-inheritance-work",
+        "category": "Frontend",
+        "date": "March 20, 2023"
+    },
+    {
+        "id": 4,
+        "title": "Why you do not set the state directly in React?",
+        "description": "The state of a component is managed internally by React. Updating the state of a component directly can have unintended consequences that can be difficult to debug.",
+        "img": "../images/blogs/why-not-modify-react-state.png",
+        "link": "/blogs/why-you-do-not-set-the-state-directly-in-react",
+        "category": "React",
+        "date": "February 21, 2023"
+    },
+    {
+        "id": 5,
+        "title": "How will you implement a search to find products by name of an array of products?",
+        "description": "Search integration enables you to find things easily on a web application. With search integration, you can look for an item/product without going through the stress of scrolling manually to find the specific item or product.",
+        "img": "../images/blogs/search-items-in-array.jpg",
+        "link": "/blogs/how-will-you-implement-a-search-to-find-products-by-name-of-an-array-of-products",
+        "category": "JavaScript Programming",
+        "date": "January 01, 2023"
+    },
+    {
+        "id": 6,
+        "title": "What is a unit test? Why should write unit tests?",
+        "description": "Unit testing is a type of software testing where individual units or software components are tested. Its purpose is to validate that each unit of code performs as expected.",
+        "img": "../images/blogs/unit-testing.png",
+        "link": "/blogs/what-is-a-unit-test-&-why-should-write-unit-tests",
+        "category": "Unit Testing",
+        "date": "December 16, 2022"
+    }
+]
