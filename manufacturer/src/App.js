@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Login from './components/Authentication/Login';
 import Register from './components/Authentication/Register';
 import RetrievePassword from './components/Authentication/RetrievePassword';
-import NotFound from './components/Shared/NotFound';
+import NotFound2 from './components/Shared/NotFound2';
 import Navbar from './components/Shared/Navbar';
 import Footer from './components/Shared/Footer';
 import BlogLists from './components/Blogs/Bloglists/Bloglists';
@@ -32,7 +32,7 @@ function App() {
         <Route path='/blogs/how-will-you-implement-a-search-to-find-products-by-name-of-an-array-of-products' element={<ImplementSearch></ImplementSearch>}></Route>
         <Route path='/blogs/what-is-a-unit-test-&-why-should-write-unit-tests' element={<UnitTesting></UnitTesting>}></Route>
         <Route path='/retrieve-password' element={<RetrievePassword></RetrievePassword>}></Route>
-        <Route path='/*' element={<NotFound></NotFound>}></Route>
+        <Route path='/*' element={<NotFound2></NotFound2>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
