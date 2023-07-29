@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from './Loading';
 import PageTitle from '../Shared/PageTitle';
+import SocialLogin from './SocialLogin';
 
 const Register = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -45,9 +46,11 @@ const Register = () => {
         <div className='flex my-10 justify-center items-center'>
             <PageTitle title="Register"></PageTitle>
 
-            <div className="card w-4/12 rounded-none bg-white border shadow-lg">
+            <div className="card w-96 xl:w-1/3 rounded-none bg-white border shadow-lg">
                 <div className="card-body">
-                    <h2 className="text-center text-2xl font-bold capitalize mb-2">Register a new account</h2>
+                    <h2 className="text-center text-xl xl:text-2xl font-bold capitalize mb-2">Register a new account</h2>
+
+                    <SocialLogin></SocialLogin>
 
                     <form onSubmit={handleSubmit(onSubmit)}>
                         {/* Username */}

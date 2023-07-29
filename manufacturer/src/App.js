@@ -1,6 +1,8 @@
 import './App.css';
-import Home from './components/Home/Home';
 import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Home from './components/Home/Home';
 import Login from './components/Authentication/Login';
 import Register from './components/Authentication/Register';
 import RetrievePassword from './components/Authentication/RetrievePassword';
@@ -35,6 +37,7 @@ function App() {
         <Route path='/*' element={<NotFound2></NotFound2>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }
