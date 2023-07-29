@@ -1,16 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
+import Loading from './Loading';
+import PageTitle from '../Shared/PageTitle';
 
 const Register = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+    const [userInfo, setUserInfo] = useState(null);
+    // const [token] = useCreateUserToken([user, userInfo]);
+    const navigate = useNavigate();
+    // console.log(userInfo);
+
+    let signInError;
+    if (error || updateError) {
+        signInError = <p className='text-error'><small>{error?.message || updateError?.message}</small></p>
+    }
+
+    if (loading || updating) {
+        return <Loading></Loading>
+    }
+
+    if (user) {
+        // console.log(user);
+        navigate('/');
+    }
     
     const onSubmit = async (data) => {
         // console.log(data);
+        setUserInfo(data);
+        await createUserWithEmailAndPassword(data.email, data.password);
+        await updateProfile({ displayName: data.name });
     }
 
     return (
         <div className='flex my-10 justify-center items-center'>
+            <PageTitle title="Register"></PageTitle>
 
             <div className="card w-4/12 rounded-none bg-white border shadow-lg">
                 <div className="card-body">
@@ -93,6 +126,7 @@ const Register = () => {
                             </label>
                         </div>
 
+                        {signInError}
                         <input
                             className='btn btn-primary rounded-none focus:border-primary focus:outline-none btn-sm w-full max-w-xs mt-3 h-10'
                             type="Submit"
