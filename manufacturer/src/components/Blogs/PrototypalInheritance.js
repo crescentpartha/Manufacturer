@@ -100,9 +100,6 @@ console.log(me.accountInfo); 	// mymail@outlook.com #67899
 //Least specific to most: not all user accounts are premium accounts, not all premium accounts are family premium accounts.`;
 
     return (
-        // <div>
-        //     <h2>How does prototypical inheritance work?</h2>
-        // </div>
         <div className='my-10 mx-auto max-w-screen-2xl'>
             <div className='mx-10 sm:mx-20 lg:mx-36 xl:mx-56'>
                 {/* Intro Banner Section */}
