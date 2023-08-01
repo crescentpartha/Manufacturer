@@ -1,7 +1,5 @@
 import React from 'react';
 import { FcBusinessman, FcCalendar, FcClock, FcOpenedFolder } from 'react-icons/fc';
-import { HashLink as Link } from 'react-router-hash-link';
-// import { Link } from 'react-router-dom';
 import Code from './SyntaxHighlighter/Dracula_SyntaxHighlighter';
 
 const ModifyReactStateDirectly = () => {
